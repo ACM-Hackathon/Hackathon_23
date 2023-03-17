@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "404171819556",
+    "project_id": "student-facilitation-41ac7",
+    "storage_bucket": "student-facilitation-41ac7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404171819556:android:acdb62d3ed8928cd2b66b1",
+        "android_client_info": {
+          "package_name": "com.Triggers.student_facilitation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404171819556-2o7orkflg1frt38d3s9itjfobvnmucq2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwgkHmkIcQenKedC2ctDdx6F-JRd7VKg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404171819556-2o7orkflg1frt38d3s9itjfobvnmucq2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
