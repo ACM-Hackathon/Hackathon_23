@@ -1,0 +1,40 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.container{
+    max-width:80%;
+    padding: 30px;
+    margin:auto
+}
+.container h1,p{
+    text-align: center;
+}
+
+input,textarea{
+    width: 80%;
+    margin: 11px 0px;
+    padding: 7px;
+    border: 3px solid black;
+    border-radius: 6px;
+    outline: none;
+    margin: 10px;
+    margin-left: 8.5%;
+}
+form,button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 5px;
+}
+img{
+    margin: auto;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    z-index: -1;
+    opacity: 0.25;
+}
