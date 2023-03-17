@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="css/styleLogin.css">
+    <title>AgroTech</title>
+</head>
+
+<body>
+
+
+
+    <!------ Include the above in your HEAD tag ---------->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-login">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <a href="#" class="active" id="login-form-link">Login</a>
+                            </div>
+                            <div class="col-xs-6">
+                                <a href="#" id="register-form-link">Register</a>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!-- 
+                                    Logiiiiiin
+                                 -->
+                                <form id="login-form" action="login" method="post"
+                                    role="form" style="display: block;">
+                                    <div class="form-group">
+                                        <input type="text" name="username" id="username" tabindex="1"
+                                            class="form-control" placeholder="Username" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password" id="password" tabindex="2"
+                                            class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-sm-offset-3">
+                                                <input type="submit" name="login-submit" id="login-submit" tabindex="4"
+                                                    class="form-control btn btn-login" value="Log In">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="text-center">
+                                                    <a href="/" tabindex="5" class="forgot-password">Back to Home</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- 
+                                    Regiiiiiiister
+
+                                -->
+                                <form id="register-form" action="/register" method="post"
+                                    role="form" style="display: none;">
+                                    <div class="form-group">
+                                        <input type="text" name="username" id="aadharNumber" tabindex="1"
+                                            class="form-control" placeholder="User Name" value="" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="firstname" id="firstName" tabindex="1" class="form-control"
+                                            placeholder="First Name" value="" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="lastname" id="lastName" tabindex="2"
+                                            class="form-control" placeholder="Last Name" required>
+                                    </div>      
+                                    <div class="form-group">
+                                        <select name="location" id="location" tabindex="1"
+                                            class="form-control" placeholder="location" value="" required>
+                                            <option value="Sangli">Sangil</option>
+                                            <option value="Raigad">Raigad</option>
+                                            <option value="Aurangabad">Aurangabad</option>
+                                            <option value="Nashik">Nashik</option>
+                                            <option value="Nagpur">Nagpur</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="number" name="phonenumber" id="phonenumber" tabindex="1"
+                                            class="form-control" placeholder="Phone Number" value="" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="password" name="password" id="password"
+                                            tabindex="2" class="form-control" placeholder="Password" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-sm-offset-3">
+                                                <input type="submit" name="register-submit" id="register-submit"
+                                                    tabindex="4" class="form-control btn btn-register"
+                                                    value="Register Now">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="text-center">
+                                                    <a href="/" tabindex="5" class="forgot-password">Back to Home</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/loginRegister.js"></script>
+</body>
+
+</html>
