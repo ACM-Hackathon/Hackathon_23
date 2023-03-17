@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Welcome to Tidee blue. Tidee blue is a website that aims to connect NGOs and industries.
+  We encourage effective waste disposal and recycling to contribute to a cleaner environment.">
+  <meta name="keywords" content="Tidee blue, clean ocean, NGOS,plastic waste, recycle,industries">
+  <link rel="stylesheet" href="style.css">
+  <title> Tidee Blue| Products</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <img src="./images/Tidee.jpg" alt="my image">
+        <h1 class="logo"><a href="index.html">Tidee Blue</a></h1>
+        <ul>
+          <li><a  href="index.html">Home</a></li>
+          <li><a href="NGO.html">Schedule</a></li>
+          <li><a href="login.html">login</a></li>
+          <li><a class="current" href="products.html">Products</a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+   
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <a href="https://instagram.com/recharkha_ecosocial?igshid=YmMyMTA2M2Y=">
+    <img src="./images/recharkha.JPG" style="width:100%">
+   
+    <div class="text">Recharkha Ecosocial</div>
+    </a>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2/ 6</div>
+    <a href="https://bureo.co/collections/bureo">
+    <img src="./images/bureo.JPG" style="width:100%">
+   
+    <div class="text">Bureo</div>
+    </a>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3/ 6</div>
+    <a href="https://neemans.com/">
+    <img src="./images/neemans.JPG" style="width:100%">
+   
+    <div class="text">Neeman's</div>
+    </a>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <a href="https://www.4ocean.com/collections/all-products-1">
+    <img src="./images/4ocean.JPG" style="width:100%">
+   
+    <div class="text">4ocean</div>
+    </a>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5/ 6</div>
+    <a href="https://unitedbyblue.com/">
+    <img src=".\images\unitedbyblue.JPG" style="width:100%">
+    <div class="text">united by blue</div>
+    </a>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6/ 6</div>
+    <a href="https://www.patagonia.com/shop/recycled-clothing-gear">
+    <img src=".\images\patagonia50.JPG" style="width:100%">
+    <div class="text">patagonia 50</div>
+    </a>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  <footer id="main-footer">
+    <p>Tidee blue&copy; 2023, All RIghts Reserved</p>
+  </footer>
+</body>
+</html>  
+  
