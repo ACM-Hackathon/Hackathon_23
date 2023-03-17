@@ -1,0 +1,95 @@
+body{
+  background: linear-gradient(100deg, green,blue);
+  margin: 0;
+}
+.heading{
+  display: flex;
+  width: 100%;
+  position:relative;
+  background: linear-gradient(120deg, darkgreen , white);
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  border-radius: 20%;
+  margin: 3px;
+}
+.logo{
+  background-color: white;
+}
+.headline{
+  font-size: 2rem;
+  scale: 1;
+  flex-grow: 1;
+  padding-left: 4vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+.login{
+  margin-right: 6vw;
+  background-color: antiquewhite;
+  border: 2px double blue;
+  border-radius: 4px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 3px 3px 3px 3px;
+  scale: 1;
+  transition: scale 0.2s ease;
+  cursor: pointer;
+}
+.login:hover{
+  scale: 1.2;
+}
+.login a:hover{
+  color: orange;
+}
+.login:active{
+  scale: 0.95;
+}
+.login a{
+  text-decoration: none;
+}
+.nodec{
+  
+  border: 1px solid white;
+  backdrop-filter: brightness(60%);
+  backdrop-filter: blur(15px);
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10%;
+  font-size: 20px;
+  margin: 20px;
+  color:black;
+
+}
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1rem;
+    justify-content: start;
+    background-color:rgb(102, 233, 55) ;
+  }
+  .headname {
+    font-size: 2rem;
+    flex-grow: .7;
+    min-width: min-content;
+  }
+  .fertilizer p{
+    font-size: larger;
+    font-weight: 100rem;
+    color: white;
+    align-self: center;
+  }
+  .fertilizer{
+    display: flex;
+    column-gap: 2rem;
+    padding:2rem;
+  }
+  .fertilizer img{
+    /* min-width: 20px; */
+    min-height:20px ;
+  }
+  .fertilizer a{
+    color: white;
+  }

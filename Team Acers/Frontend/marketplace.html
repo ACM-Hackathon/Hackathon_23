@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market Places</title>
+    <link rel="stylesheet" href="./marketplace.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="heading">
+      <div class="logo">
+        <img src="./indeximg/krushilogo.png" alt="logo" height="65px" />
+      </div>
+      <div class="headline">Krushi Samvardhan</div>
+      <div id="google_translate_element"></div>
+      <div class="login" id="login"><a href="./login.html">LOGIN</a></div>
+    </div>
+    <!-- <div> -->
+    <div class="pagesfull">
+      <div class="pagenames name1">
+        <a href="./yojanas.html">Yojanas</a>
+      </div>
+      <div class="pagenames name2">
+        <a href="./marketplace.html">Market Place</a>
+      </div>
+      <div class="pagenames name3">
+        <a href="./Modermfaming.html">Modern Farming Technique</a>
+      </div>
+      <div class="pagenames name4">
+        <a href="./Exhibitions.html">Upcoming Exihibitions</a>
+      </div>
+      <div class="pagenames name5">
+        <a href="./agrotoursim.html">Agro-Toursim</a>
+      </div>
+      <div class="pagenames name6">
+        <a href="./fertilizer.html">Fertilizers and Pesticides</a>
+      </div>
+      <!-- <div class="pagenames name7">
+        <a href="./weather.html">Weather Alerts</a>
+      </div> -->
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown_menu">
+      <div class="pagedrop name1">
+        <a href="./yojanas.html">Yojanas</a>
+      </div>
+      <div class="pagedrop name2">
+        <a href="./marketplace.html">Market Place</a>
+      </div>
+      <div class="pagedrop name3">
+        <a href="./Modermfaming.html">Modern Farming Technique</a>
+      </div>
+      <div class="pagedrop name4">
+        <a href="./Exhibitions.html">Upcoming Exihibitions</a>
+      </div>
+      <div class="pagedrop name5">
+        <a href="./agrotoursim.html">Agro-Toursim</a>
+      </div>
+      <div class="pagedrop name6">
+        <a href="./fertilizer.html">Fertilizers and Pesticides</a>
+      </div>
+      <!-- <div class="pagedrop name7">
+        <a href="./weather.html">Weather Alerts</a>
+      </div> -->
+    </div>
+
+    <div class="marketcontent">
+      <div class="container">
+        <div class="header"><h1>Market Place</h1></div>
+        <div class="image img1">
+          <img src="./indeximg/durapump.png" alt="pump" height="500px" />
+        </div>
+        <div class="info text1">Dura-king Three phase water supply</div>
+        <div class="info ext1">Price:- Rs.21,800</div>
+        <br /><br />
+        <div class="image img2">
+          <img src="./indeximg/sprayer.png" alt="" />
+        </div>
+        <div class="info text2">Battery operated spray tank</div>
+        <div class="info ext2">Price:- Rs.2,989</div>
+        <br /><br />
+        <div class="image img3">
+          <img src="./indeximg/ricemill.png" alt="" />
+        </div>
+        <div class="info text3">Rice mill with motor(Grain miller)</div>
+        <div class="info ext3">Price:- Rs.31,800</div>
+        <br /><br />
+        <div class="image img4">
+          <img src="./indeximg/Seedermulti.png" alt="" />
+        </div>
+        <div class="info text4">Hand push Plant seeder and fertilizer</div>
+        <div class="info ext4">Price:- Rs.8,880</div>
+        <br /><br />
+        <div class="image img5">
+          <img src="./indeximg/smalltractor.png" alt="" />
+        </div>
+        <div class="info text5">Mega Power tiller</div>
+        <div class="info ext5">Price:- 52,800</div>
+        <br /><br />
+        <div class="image img6">
+          <img src="./indeximg/cultivator4stroke.png" alt="" />
+        </div>
+        <div class="info text6">4-stroke cultivator</div>
+        <div class="info ext6">Price:- Rs.33,800</div>
+        <br /><br />
+      </div>
+    </div>
+    <!-- </div> -->
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+      google.translate.TranslateElement(
+        {
+          pageLanguage: "en",
+          includedLanguages: "mr,en",
+          layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+        },
+        "google_translate_element"
+      );
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+  </body>
+</html>
