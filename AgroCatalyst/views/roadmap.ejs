@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/roadmap.css">
+    <title>AgroTech</title>
+</head>
+
+
+
+<body>
+    <div class="timeline">
+
+
+        <% let ind = Object.keys(sch); %>
+        <% ind.forEach((index) => { %>
+
+            <% if(index%2==1){ %>
+            <div class="container left-container">
+                <img src="img/Week_<%= index %>.png">
+                <div class="text-box">
+                    <h2>Week <%= index %></h2>
+                    <p><%= sch[index] %></p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+            <% } else{ %>
+                <div class="container right-container">
+                    <img src="img/Week_<%= index %>.png">
+                    <div class="text-box">
+                        <h2>Week <%= index %></h2>
+                        <p><%= sch[index] %></p>
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+            <% } %>
+
+            
+        <% }); %>
+        <!-- <div class="container right-container">
+            <img src="img/Week_2.png">
+            <div class="text-box">
+                <h2>Week 2</h2>
+                <small>2018-2019</small>
+                <p>PQR</p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container left-container">
+            <img src="img/Week_3.png">
+            <div class="text-box">
+                <h2>Week 3</h2>
+                <small>2018-2019</small>
+                <p>PQR</p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container right-container">
+            <img src="img/Week_4.png">
+            <div class="text-box">
+                <h2>Week 4</h2>
+                <small>2018-2019</small>
+                <p>PQR</p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container left-container">
+            <img src="img/Week_5.png">
+            <div class="text-box">
+                <h2>Week 5</h2>
+                <small>2018-2019</small>
+                <p>PQR</p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div> -->
+    </div>
+</body>
+
+</html>
