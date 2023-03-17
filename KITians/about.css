@@ -1,0 +1,6 @@
+.container,p{
+    max-width:100%;
+    font-size: 25px;
+    background-color: rgb(201, 223, 224);
+    text-align: center;
+}
