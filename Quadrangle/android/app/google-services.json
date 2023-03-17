@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "502944064389",
+    "project_id": "netra-e747d",
+    "storage_bucket": "netra-e747d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502944064389:android:131e143a518e9084849aec",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502944064389-o3252d4seb1qejp80f6hcn7h043va9ti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAo3vpHNAjaOItyh-BjCt_bxEkXFw0sw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502944064389-o3252d4seb1qejp80f6hcn7h043va9ti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
