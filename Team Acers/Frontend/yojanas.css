@@ -1,0 +1,71 @@
+body{
+    background: linear-gradient(100deg, green,blue);
+    margin: 0;
+  }
+  .heading{
+    display: flex;
+    width: 100%;
+    position:relative;
+    background: linear-gradient(120deg, darkgreen , white);
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img{
+    border-radius: 20%;
+    margin: 3px;
+  }
+  .logo{
+    background-color: white;
+  }
+  .headline{
+    color: white;
+    font-size: 2rem;
+    scale: 1;
+    flex-grow: 1;
+    padding-left: 4vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .login{
+    margin-right: 6vw;
+    background-color: antiquewhite;
+    border: 2px double blue;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 3px 3px 3px 3px;
+    scale: 1;
+    transition: scale 0.2s ease;
+    cursor: pointer;
+  }
+  .login:hover{
+    scale: 1.2;
+  }
+  .login a:hover{
+    color: orange;
+  }
+  .login:active{
+    scale: 0.95;
+  }
+  .login a{
+    text-decoration: none;
+  }
+  .item4 {
+    box-shadow:  10px 5px 5px rgb(167, 228, 242);
+    font-size: larger;
+    border: 0.1rem solid;
+    padding: 0.5rem;
+    color:white;
+    background-color: rgba(6, 6, 6, 0.1);
+    
+  }
+  ol{
+    color: white;
+  }
+  li{
+    font-size: larger;
+    font-weight:bolder;
+  }
+  .bolder{
+    font-size: larger;
+    font-weight:bolder;
+  }

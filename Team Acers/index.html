@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krushi Samvardhan</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="heading">
+      <div class="logo">
+        <img
+          src="./Frontend/indeximg/krushilogo.png"
+          alt="logo"
+          height="65px"
+        />
+      </div>
+      <div class="headline">Krushi Samvardhan</div>
+      <div id="google_translate_element"></div>
+      <div class="login" id="login">
+        <a href="./Frontend/login.html">LOGIN</a>
+      </div>
+    </div>
+    <div>
+      <div class="pagesfull">
+        <div class="pagenames name1">
+          <a href="./Frontend/yojanas.html">Yojanas</a>
+        </div>
+        <div class="pagenames name2">
+          <a href="./Frontend/marketplace.html">Market Place</a>
+        </div>
+        <div class="pagenames name3">
+          <a href="./Frontend/Modermfaming.html">Modern Farming Technique</a>
+        </div>
+        <div class="pagenames name4">
+          <a href="./Frontend/Exhibitions.html">Upcoming Exihibitions</a>
+        </div>
+        <div class="pagenames name5">
+          <a href="./Frontend/agrotoursim.html">Agro-Toursim</a>
+        </div>
+        <div class="pagenames name6">
+          <a href="./Frontend/fertilizer.html">Fertilizers and Pesticides</a>
+        </div>
+        <!-- <div class="pagenames name7">
+          <a href="./Frontend/weather.html">Weather Alerts</a>
+        </div> -->
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown_menu">
+        <div class="pagedrop name1">
+          <a href="./Frontend/yojanas.html">Yojanas</a>
+        </div>
+        <div class="pagedrop name2">
+          <a href="./Frontend/marketplace.html">Market Place</a>
+        </div>
+        <div class="pagedrop name3">
+          <a href="./Frontend/Modermfaming.html">Modern Farming Technique</a>
+        </div>
+        <div class="pagedrop name4">
+          <a href="./Frontend/Exhibitions.html">Upcoming Exihibitions</a>
+        </div>
+        <div class="pagedrop name5">
+          <a href="./Frontend/agrotoursim.html">Agro-Toursim</a>
+        </div>
+        <div class="pagedrop name6">
+          <a href="./Frontend/fertilizer.html">Fertilizers and Pesticides</a>
+        </div>
+        <div class="pagedrop name7">
+          <a href="./Frontend/weather.html">Weather Alerts</a>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="image img1">
+          <img src="./Frontend/indeximg/form.png" alt="form" />
+        </div>
+        <div class="info text1">
+          PM kisan yojana's application date extended by 2 weeks
+        </div>
+        <div class="image img2">
+          <img src="./Frontend/indeximg/polyhouse.png" alt="" />
+        </div>
+        <div class="info text2">
+          New and Efficient Polyhouse farming practiced in Southern parts of
+          India
+        </div>
+        <div class="image img3">
+          <img src="./Frontend/indeximg/thunderclouds.png" alt="" />
+        </div>
+        <div class="info text3">
+          Thunderstorms expected for next week. Please exercise caution.
+        </div>
+      </div>
+    </div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+      google.translate.TranslateElement(
+        {
+          pageLanguage: "en",
+          includedLanguages: "mr,en",
+          layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+        },
+        "google_translate_element"
+      );
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+  </body>
+</html>

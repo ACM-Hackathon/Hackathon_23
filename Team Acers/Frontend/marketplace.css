@@ -1,0 +1,157 @@
+body {
+  background-image: url(./indeximg/back.jpg);
+  margin: 0;
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.heading {
+  display: flex;
+  width: 100%;
+
+  background: linear-gradient(120deg, darkgreen, white);
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  border-radius: 20%;
+  margin: 3px;
+}
+.logo {
+  background-color: white;
+}
+.headline {
+  font-size: 2rem;
+  scale: 1;
+  flex-grow: 1;
+  padding-left: 4vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.login {
+  margin-right: 6vw;
+  background-color: antiquewhite;
+  border: 2px double blue;
+  border-radius: 4px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 3px 3px 3px 3px;
+  scale: 1;
+  transition: scale 0.2s ease;
+  cursor: pointer;
+}
+.login:hover {
+  scale: 1.2;
+}
+.login a:hover {
+  color: orange;
+}
+.login:active {
+  scale: 0.95;
+}
+.login a {
+  text-decoration: none;
+}
+
+/* above is title code  */
+
+.pagesfull {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding: 3vh;
+  flex-wrap: wrap;
+  row-gap: 2vw;
+}
+.pagenames,
+.pagedrop {
+  scale: 1;
+  color: white;
+  transition: scale 0.2s ease;
+}
+.pagenames a,
+.pagedrop a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.pagenames:hover {
+  scale: 1.35;
+}
+.pagedrop:hover {
+  scale: 1.35;
+}
+.pagenames a:hover {
+  color: orange;
+}
+.pagedrop a:hover {
+  color: orange;
+}
+.toggle_btn {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 100px;
+  right: 2rem;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 1058px) {
+  .pagesfull .pagenames {
+    display: none;
+  }
+  .pagesfull .toggle_btn {
+    display: contents;
+    justify-self: center;
+  }
+  .dropdown_menu {
+    display: block;
+  }
+}
+.dropdown_menu.open {
+  height: 330px;
+}
+.dropdown_menu {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.2s ease;
+}
+.pagedrop {
+  display: flex;
+  padding: 0.7rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* market place  */
+
+.marketcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: inline-flex;
+  border: 0.00001px solid white;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem 9vw 2rem 9vw;
+  backdrop-filter: blur(10px);
+  row-gap: 1rem;
+  background: radial-gradient(
+    rgba(217, 244, 217, 0.332),
+    rgba(0, 255, 221, 0.086)
+  );
+}
+.image img {
+  max-height: 400px;
+}
+.info {
+  font-size: 1.5rem;
+}
